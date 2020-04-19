@@ -1,0 +1,265 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.div-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  background-image: url(https://www.alliancereit.com/img/alliance-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* 
+.div-2{
+  height:50vh;
+} */
+
+.div-3{
+  display: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://m.foolcdn.com/media/millionacres/original_images/image2_mdDMemJ.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.div-4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body {
+  background: transparent;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px !important;
+  background-color: transparent !important;
+  z-index: 1;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background-color: transparent !important;
+  z-index: 1;
+}
+
+.swiper-slide:hover{
+  transform: rotateY(180deg);
+  transition: transform 0.6s;
+}
+
+.c-image {
+    width: 100%;
+    height: 400px;
+}
+
+.flip-card {
+/* position: relative; */
+/* left: 200px;
+top: 530px; */
+background-color: transparent;
+height: 300px;
+width: 300px;
+font-size: 14px;
+perspective: 1000px;
+}
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border-radius: 10px;
+/* font-family: 'FontAwesome';content: '\f00d'; */
+}
+.flip-card-front {
+background-color: transparent;
+color: black;
+}
+.flip-card-back {
+background-color: transparent;
+color: white;
+transform: rotateY(180deg);
+cursor: pointer;
+}
+.flip-card-front p {
+box-sizing: border-box
+;
+font-size: 14px;
+text-align: center;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 2px;
+padding-right: 2px;
+}
+video {
+height: 300px;
+width: 100%;
+overflow: hidden;
+border-radius: 10px;
+/* border-style: none; */
+}
+img {
+height: 300px;
+width: 100%;
+overflow: hidden;
+border-radius: 10px;
+/* border-style: none; */
+}
+
+#food-front, #scheduler-front, #typer-front,
+#music-front, #password-front, #movie-front,
+#hangman-front, #quiz-front {
+  background-image: url(https://woz-u.com/wp-content/uploads/2019/09/html-css-js.png);
+  background-size: 300px 300px;
+}
+
+#calculator-front, #rps-front, #pong-front {
+  background-image: url(https://clip.cookdiary.net/sites/default/files/wallpaper/python-logo-clipart/178242/python-logo-clipart-green-python-178242-9379865.png);
+  background-size: 300px 300px;
+}
+
+#ips-front, #rsa-front{
+  background-image: url(https://www.qdoscc.com/sites/default/files/excel_titlepg_icon_2.png);
+  background-size: 300px 300px;
+}
+
+
+
+
+
+
+
+
+.photo-swiper-container {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+.swiper-photo-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  top:-50px;
+  border-radius: 15px;
+
+}
+
+.photo-swiper-container{
+  width: 300px;
+  height: 300px;
+  padding-top: 165px;
+  margin-right: 175px;
+}
+
+.swiper-bio-slide{
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  top:-50px;
+  border-radius: 15px;
+}
+
+/*  */
+
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+.mySlides1, .mySlides2 {
+  display: none
+}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
