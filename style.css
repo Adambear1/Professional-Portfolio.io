@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Kaushan+Script&display=swap');
+
 * {
   border: 0;
   padding: 0;
   margin: 0;
+}
+
+#quote {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 105px;
+  padding-left: 105px;
+  margin-top: 80px;
+  opacity: 80%;
 }
 
 .div-1{
@@ -13,19 +28,43 @@
   background-image: url(https://www.alliancereit.com/img/alliance-2.jpg);
   background-size: cover;
   background-attachment: fixed;
+  /* filter: blur(3px) */
 }
-/* 
-.div-2{
-  height:50vh;
-} */
+.name-header{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-family: 'Arima Madurai', cursive;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 90%;
+}
+
+#name{
+  margin-top: 70px;
+}
+
+i {
+  float: right;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 10px
+}
+
+i:nth-last-child() {
+  padding-right: 50px
+}
+
+
 
 .div-3{
   display: fixed;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  background-image: url(https://m.foolcdn.com/media/millionacres/original_images/image2_mdDMemJ.jpg);
+  height: 80vh;
+  background-image: url(house.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -33,10 +72,11 @@
 
 .div-4{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
-  height: 60vh;
+  height: 20vh;;
   background-color: white;
   background-size: cover;
   background-attachment: fixed;
@@ -186,8 +226,10 @@ border-radius: 10px;
 .photo-swiper-container{
   width: 300px;
   height: 300px;
-  padding-top: 165px;
-  margin-right: 175px;
+  padding-top: 100px;
+  margin-right: 50px;
+  top: 90px;
+  bottom: 0;
 }
 
 .swiper-bio-slide{
@@ -203,10 +245,11 @@ border-radius: 10px;
 
 
 #cf {
-  position:relative;
-  height:281px;
-  width:450px;
+  position: absolute;
+  height: 200px;
+  width: 300px;
 }
+
 
 #cf img {
   position:absolute;
@@ -262,4 +305,41 @@ img {vertical-align: middle;}
   color: black;
 }
 
+/* .row{
+  margin-top: 110px !important;
 
+} */
+
+
+.bg-modal {
+  width: 100%;
+  height: 150%;
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  z-index: 10;
+
+}
+
+.modal-content {
+  width: 700px;
+  height: 700px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  top: -190px;
+  left: 0;
+  position: absolute;
+
+  text-align: center; 
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.invisible {
+  visibility: hidden;
+  }
