@@ -39,6 +39,13 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
   opacity: 90%;
+  width: 75%;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 #name{
@@ -186,42 +193,92 @@ border-radius: 10px;
 
 #food-front, #scheduler-front, #typer-front,
 #music-front, #password-front, #movie-front,
-#hangman-front, #quiz-front {
+#hangman-front, #quiz-front, #lyricSearch-front, 
+#memoryCard-front, #meditation-front {
   background-image: url(https://woz-u.com/wp-content/uploads/2019/09/html-css-js.png);
   background-size: 300px 300px;
+  font-size: 45px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px whitesmoke;
+  box-shadow: 2px 2px whitesmoke;
 }
 
 #calculator-front, #rps-front, #pong-front {
   background-image: url(https://clip.cookdiary.net/sites/default/files/wallpaper/python-logo-clipart/178242/python-logo-clipart-green-python-178242-9379865.png);
   background-size: 300px 300px;
+  font-size: 45px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px whitesmoke;
+  box-shadow: 2px 2px whitesmoke;
 }
 
 #ips-front, #rsa-front{
   background-image: url(https://www.qdoscc.com/sites/default/files/excel_titlepg_icon_2.png);
   background-size: 300px 300px;
+  font-size: 45px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px whitesmoke;
+  box-shadow: 2px 2px whitesmoke;
+}
+
+#mongochat-front{
+  background-image: url(https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/node-c4e49c25d15310e98fdd371dedc83f2e.jpg);
+  background-size: 300px 300px;
+  font-size: 45px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px whitesmoke;
+  box-shadow: 2px 2px whitesmoke;
+  
 }
 
 
+/*  */
 
-
-
-
-
-
-.photo-swiper-container {
-  width: 300px;
-  height: 300px;
-  padding: 50px;
+.car { 
+  width:20%;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 30px;
 }
-.swiper-photo-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
+
+.carousel-control-next-icon {
+  right: 130px;
+  opacity: 0;
+}
+.carousel-control-prev-icon {
+  opacity: 0;
+}
+
+.res {
+  width: 700px;
   height: 300px;
-  top:-50px;
+  background-color: rgba(145, 145, 145, 0.7);
+  position: absolute;
+  margin-right: auto;
+  margin-left: 525px;
+  margin-top: 150px;
   border-radius: 15px;
-
+  border-style: solid;
+  border-width: 7px;
 }
+
+
 
 .photo-swiper-container{
   width: 300px;
@@ -305,12 +362,6 @@ img {vertical-align: middle;}
   color: black;
 }
 
-/* .row{
-  margin-top: 110px !important;
-
-} */
-
-
 .bg-modal {
   width: 100%;
   height: 150%;
@@ -320,7 +371,6 @@ img {vertical-align: middle;}
   display: flex;
   justify-content: center;
   align-items: center;
-  
   z-index: 10;
 
 }
@@ -343,3 +393,167 @@ img {vertical-align: middle;}
 .invisible {
   visibility: hidden;
   }
+
+  .multi-collapse {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  .obj{
+    height: 231px !important;
+    width: 685px !important;
+    left: -15px !important;
+  }
+
+  .fa-address-card:hover{
+    cursor: pointer;
+    opacity: 70%;
+  }
+
+
+
+  /*  */
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+  }
+
+.btnWidth {
+  width: 685px;
+  margin-left: -15px;
+}
+
+.expndWidth {
+  width: 100%;
+  height: auto;
+}
+
+.card-resume{
+  width: 685px;
+  height: 248px;
+  top: -36px;
+  left: -15px;
+  background-image: url(res/resume.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card-testimonial{
+  width: 685px;
+  height: 248px;
+  top: -36px;
+  left: -15px;
+  background-image: url(res/testimonials.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card-portfolio{
+  width: 685px;
+  height: 248px;
+  top: -36px;
+  left: -30px;
+  background-image: url(res/portfolio.jpg);
+  background-size: cover;
+  cursor: pointer;
+}

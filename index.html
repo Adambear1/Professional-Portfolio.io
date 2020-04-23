@@ -7,12 +7,17 @@
       minimum-scale=1, maximum-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link href="css/smoothness/jquery-ui-1.9.0.custom.css" rel="stylesheet">
     <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="swiper.min.css">
     <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous">
+      crossorigin="anonymous"> 
+      <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -20,23 +25,25 @@
       />
 
 
-    <title>Hello, world!</title>
+    <title>Professional Portfolio</title>
   </head>
   <body>
+
     <!-- Navbar -->
     <div class='heading-bar'><h1 class='name-header'>Adam Birgenheier<span
           class="badge
           badge-secondary"> Professional
           Portfolio</span>
-        <a href="https://www.linkedin.com/in/abirgenheier/"><i class="fab
+        <a href="https://www.linkedin.com/in/abirgenheier/" target="_blank"><i
+            class="fab
             fa-linkedin-in"></i></a>
-        <a href="https://github.com/Adambear1"><i class="fab
-            fa-github"></i></a><i class="far fa-address-card"></i></h1></div>
+        <a href="https://github.com/Adambear1" target="_blank"><i class="fab
+            fa-github"></i></a><i class="far fa-address-card" id='popUp'></i></h1></div>
     <!--  -->
     <div class="bg-modal invisible" id='bg-modal'>
       <div class="modal-content">
         <h2 id="quote">'Be Obsessed or Be Average' ~ Grant Cardone</h2>
-        <h3 id="name"><i class="fas fa-user"></i>Adam Carl Birgenheier</h3>
+        <h3 id="name"><span><i class="fas fa-user"></i></span>Adam Carl Birgenheier</h3>
         <h3 id="email"><i class="fas fa-inbox"></i>AdamCarlBirgenheier@gmail.com</h3>
         <h3 id="mail-address"><i class="fas fa-envelope-square"></i>PO Box 69,
           Tacoma WA 98401</h3>
@@ -44,10 +51,11 @@
       </div>
     </div>
     <!--  -->
-    <div class="div-1"></div>
+    <div class="div-1">
+    </div>
     <div class="div-2">
       <!-- <div class="container"> -->
-      <div class="swiper-container">
+      <div class="swiper-container swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="flip-card" id='food'>
@@ -62,8 +70,6 @@
               </div>
             </div>
           </div>
-
-
           <div class="swiper-slide">
             <div class="flip-card" id='scheduler'>
               <div class="flip-card-inner" id='scheduler-inner'>
@@ -138,6 +144,32 @@
                   <p></p>
                 </div>
                 <div class="flip-card-back" id='hangman-back'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card" id='meditation'>
+              <div class="flip-card-inner" id='meditation-inner'>
+                <div class="flip-card-front" id='meditation-front'>
+                  <h1></h1>
+                  <p></p>
+                  <p></p>
+                </div>
+                <div class="flip-card-back" id='meditation-back'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card" id='lyricSearch'>
+              <div class="flip-card-inner" id='lyricSearch-inner'>
+                <div class="flip-card-front" id='lyricSearch-front'>
+                  <h1></h1>
+                  <p></p>
+                  <p></p>
+                </div>
+                <div class="flip-card-back" id='lyricSearch-back'>
                 </div>
               </div>
             </div>
@@ -220,74 +252,171 @@
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="flip-card" id='mongochat'>
+              <div class="flip-card-inner" id='mongochat-inner'>
+                <div class="flip-card-front" id='mongochat-front'>
+                  <h1></h1>
+                  <p></p>
+                  <p></p>
+                </div>
+                <div class="flip-card-back" id='mongochat-back'>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="div-3"></div>
-    <div class="div-4 container" id="bio">
-      <div class="col-4">
-        <div class="swiper-container swiper1 photo-swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-photo-slide"
-              style="background-image:url(headshot.jpg)"></div>
-            <div class="swiper-slide swiper-photo-slide"
-              style="background-image:url(headshot1.jpg)"></div>
-            <div class="swiper-slide swiper-photo-slide"
-              style="background-image:url(headshot2.jpg)"></div>
-            <div class="swiper-slide swiper-photo-slide"
-              style="background-image:url(headshot3.jpg)"></div>
-            <div class="swiper-slide swiper-photo-slide"
-              style="background-image:url(headshot4.jpg)"></div>
-            <div class="swiper-slide swiper-photo-slide"
-              style="background-image:url(headshot5.jpg)"></div>
-            <div class="swiper-slide swiper-photo-slide"
-              style="background-image:url(headshot6.jpg)"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+    <div class="div-3">
+      <div class='car'>
+        <div id="carouselExampleCaptions" class="carousel slide"
+          data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0"
+              class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="headshot.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="headshot1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="headshot2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="headshot3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="headshot4.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="headshot5.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions"
+            role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions"
+            role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+
       </div>
-      <div class="col-4">
-        <div id="cf">
-          <div class="mySlides1">
-            <img class="bottom" src="GunnisonLetter1-1.jpg" />
+      <div class="res">
+        <div class="container" id="myGroup">
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" id='resumeBtn' href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Resume</a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" id='portfolioBtn' data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Portfolio</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" id='testimonialBtn' data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Testimonials</button>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body card-resume">
+                  <!-- <div class="collapse" id="collapseExample1" data-parent="#myGroup">-->
+                    <a href="./res/AdamBirgenheierResume.pdf" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body card-portfolio">
+                  <!-- <div class="collapse" id="collapseExample2" data-parent="#myGroup"> -->
+                    <a href="./res/GryphonPortfolio.pdf" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample3">
+                <div class="card card-body card-testimonial">
+                  <!-- <div class="collapse" id="collapseExample2" data-parent="#myGroup"> -->
+                    <a href="./res/testimonial.pdf" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="mySlides1">
-            <img class="top" src="GunnisonLetter2-1.jpg" />
-          </div>
-          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-        </div>
-      </div>
-      <div class="col-4">
-        <div id="cf">
-          <div class="mySlides2">
-            <img class="bottom" src="GunnisonLetter1-1.jpg" />
-          </div>
-          <div class="mySlides2">
-            <img class="top" src="GunnisonLetter2-1.jpg" />
-          </div>
-          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
         </div>
       </div>
     </div>
+    <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href="https://www.facebook.com/adam.birgenheier"><i class="fab fa-facebook-f"></i></i></a>
+        <a href="https://twitter.com/ABirgenheier"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-google"></i></i></a>
+
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a>Programmer</a>
+          <a>Agent</a>
+          <a>Investor</a>
+          <a>Entrepenuer</a>
+          <a>Student</a>
+        </p>
+
+        <p>Adam Carl Birgenheier &copy; 2020</p>
+      </div>
+
+    </footer>
 
 
 
 
-
-
-
-
-    <script src="swiper.js"></script>
-    <script src="swiper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-    <script src="logic.js"></script>
-  </body>
-</html>
+      <script language="javascript" type="text/javascript" src="jquery-1.8.2.js"></script>
+      <script src="js/jquery-ui-1.9.0.custom.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+      <script src="swiper.js"></script>
+      <script src="swiper.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="logic.js"></script>
+    </body>
+  </html>
