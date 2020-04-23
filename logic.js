@@ -194,6 +194,18 @@ $('#testimonialBtn').on('click', () => {
   $('#collapseExample3 .card-body').toggleClass('card-portfolio');
 })
 
+$('#multiCollapseExample1').on('click', () => {
+  window.location = '/res/AdamBirgenheierResume.pdf'
+})
+
+$('#multiCollapseExample2').on('click', () => {
+  window.location = '/res/GryphonPortfolio.pdf'
+})
+
+$('#multiCollapseExample3').on('click', () => {
+  window.location = '/res/testimonial.pdf'
+})
+
 
 
 
